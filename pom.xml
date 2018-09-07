@@ -24,6 +24,7 @@
         <mybatis-spring-boot-starter.version>1.3.2</mybatis-spring-boot-starter.version>
         <spring-zuul.version>1.4.4.RELEASE</spring-zuul.version>
         <swagger2.version>2.8.0</swagger2.version>
+
         <com.czh.cloud.cloud-common.version>1.0.0</com.czh.cloud.cloud-common.version>
     </properties>
 
