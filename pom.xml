@@ -56,6 +56,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions><!-- 在mac上启动会有jar包冲突问题 -->
+                <exclusion>
+                    <groupId>org.hibernate.validator</groupId>
+                    <artifactId>hibernate-validator</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <!-- 注册到eureka begin -->
         <dependency>
@@ -96,21 +102,21 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.44</version>
         </dependency>
-        <dependency>
-            <groupId>com.pica.cloud.foundation</groupId>
-            <artifactId>pica-cloud-entity</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.pica.cloud.foundation</groupId>
-            <artifactId>pica-cloud-utils</artifactId>
-            <version>1.0.8.05-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.pica.cloud.foundation</groupId>-->
+            <!--<artifactId>pica-cloud-entity</artifactId>-->
+            <!--<version>1.0.0</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>com.pica.cloud.foundation</groupId>-->
+            <!--<artifactId>pica-cloud-utils</artifactId>-->
+            <!--<version>1.0.8.05-SNAPSHOT</version>-->
+            <!--<scope>compile</scope>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-data-redis</artifactId>-->
+        <!--</dependency>-->
     </dependencies>
 
     <dependencyManagement>
